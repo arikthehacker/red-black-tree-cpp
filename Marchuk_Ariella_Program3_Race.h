@@ -4,7 +4,7 @@
 * [Email:]     amarchuk@pdx.edu
 * [Course:]    CS302
 * [Assignment] Program #3
-* [Date:]      February 19 2025
+* [Date:]      February 21 2025
 *
 * [Purpose:]   Header draft 
 *******************************************************************************/
@@ -91,7 +91,7 @@ class raceWalk : public Race
 };
 
 /****************************************************************
-/ 4. Derived Class: halfMarathon 
+/ Derived Class: halfMarathon 
 ****************************************************************/
 class halfMarathon : public Race 
 {
@@ -109,8 +109,7 @@ class halfMarathon : public Race
 
         // unique methods
         void administerElectrolytes(); // will decrease avg pace (helps maintain energy)
-        int estimatedFinish();         // uses calculated avg pace and number of rest stops passed 
-                                       // to estimate finish time
+        int estimatedFinish();         // uses calculated avg pace and number of rest stops passed to estimate finish time
         double calculateAvgPace();
 
     private:
