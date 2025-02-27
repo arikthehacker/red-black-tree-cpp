@@ -4,15 +4,20 @@
 * [Email:]     amarchuk@pdx.edu
 * [Course:]    CS302
 * [Assignment] Program #3
-* [Date:]      February 21 2025
+* [Date:]      February 26 2025
 *
-* [Purpose:]   Header draft 
+* [Purpose:]   Header for the following classes:
+*                       ☣ Race
+*                           ↳ kidsRun
+*                           ↳ raceWalk
+*                       ☣ redBlackTree 
 *******************************************************************************/
 #ifndef MARCHUK_ARIELLA_PROGRAM3_RACE_H
 #define MARCHUK_ARIELLA_PROGRAM3_RACE_H
 
 #include <string>
 #include <iostream>
+#include <memory>
 
 /****************************************************************
 / Abstract Base Class: Race
@@ -115,6 +120,51 @@ class halfMarathon : public Race
     private:
         int numRestStops;
         double avgPace;
+};
+
+
+/*****************************************************************
+/  data structure class: red black tree 
+/    - holds Race* objects (base class pointers)
+*****************************************************************/
+
+enum class Color { RED, BLACK };
+
+struct rbNode
+{
+    std::string key;
+    std::shared_ptr<Race> data;
+    Color color;
+    rbNode* parent;
+    rbNode* left;
+    rbNode* right;
+
+    rbNode(const std::string& key, std::shared_ptr<Race> racePtr)
+        : key(key), data(std::move(racePtr)), color(Color::RED),
+          parent(nullptr), left(nullptr), right(nullptr) {}
+};
+
+class redBlackTree 
+{
+    public:
+        redBlackTree();
+        ~redBlackTree();
+
+        // bool insert(std::shared_ptr<Race> racePtr); 
+        void removeAll();
+        void displayAll() const;
+
+    private:
+        rbNode* root;
+        
+        // priv insert functions
+        // bool insert(rbNode*& root, rbNode* newNode);
+        // fixing function
+        // rotating left
+        // rotating right
+
+        void removeAll(rbNode*& node);
+        void displayAll(rbNode* node) const;
 };
 
 #endif  // Marchuk_Ariella_Program3_Race_H
