@@ -4,13 +4,14 @@
 * [Email:]     amarchuk@pdx.edu
 * [Course:]    CS302
 * [Assignment] Program #3
-* [Date:]      February 26 2025
+* [Date:]      February 28 2025
 *
 * [Purpose:]   Header for the following classes:
 *                       ☣ Race
 *                           ↳ kidsRun
 *                           ↳ raceWalk
 *                       ☣ redBlackTree 
+*                       ☣ rbNode [struct]
 *******************************************************************************/
 #ifndef MARCHUK_ARIELLA_PROGRAM3_RACE_H
 #define MARCHUK_ARIELLA_PROGRAM3_RACE_H
@@ -35,6 +36,8 @@ class Race
         // virtual methods 
         virtual void startRace();
         virtual void stopRace();
+
+        std::string raceInstance() const;
 
     protected:
         // all derived share these 
@@ -122,12 +125,10 @@ class halfMarathon : public Race
         double avgPace;
 };
 
-
-/*****************************************************************
-/  data structure class: red black tree 
-/    - holds Race* objects (base class pointers)
-*****************************************************************/
-
+/****************************************************************
+/ data structure struct: rbNode
+/    - node for the redblacktree storing Race objects
+****************************************************************/
 enum class Color { RED, BLACK };
 
 struct rbNode
@@ -139,29 +140,36 @@ struct rbNode
     rbNode* left;
     rbNode* right;
 
+    // constructor/destructor
     rbNode(const std::string& key, std::shared_ptr<Race> racePtr)
         : key(key), data(std::move(racePtr)), color(Color::RED),
           parent(nullptr), left(nullptr), right(nullptr) {}
 };
 
-class redBlackTree 
+/****************************************************************
+/ data structure class: redBlackTree
+/    - holds Race objects (base class pointers)
+****************************************************************/
+class redBlackTree
 {
     public:
+        // constructor/destructor
         redBlackTree();
         ~redBlackTree();
 
-        // bool insert(std::shared_ptr<Race> racePtr); 
+        // public methods
+        bool insert(std::shared_ptr<Race> racePtr);
         void removeAll();
         void displayAll() const;
 
     private:
         rbNode* root;
-        
-        // priv insert functions
-        // bool insert(rbNode*& root, rbNode* newNode);
-        // fixing function
-        // rotating left
-        // rotating right
+
+        // recursive helpers
+        bool insertHelper(rbNode*& node, rbNode* newNode, rbNode* parent);
+        void fixInsertion(rbNode* node);
+        void rotateLeft(rbNode* x);
+        void rotateRight(rbNode* x);
 
         void removeAll(rbNode*& node);
         void displayAll(rbNode* node) const;

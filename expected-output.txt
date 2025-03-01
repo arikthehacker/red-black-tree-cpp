@@ -1,0 +1,152 @@
+
+================== shamrock run 2025 =====================
+ 1. create kidsRun
+ 2. create raceWalk
+ 3. create halfMarathon
+ 4. registerRace
+ 5. startRace
+ 6. stopRace
+ 7. test kidsRun unique method (snackBreak)
+ 8. test raceWalk unique methods (penalty + dq)
+ 9. test halfMarathon unique methods
+10. create redBlackTree
+11. insert new race into rbTree
+12. display rbTree
+13. remove all from rbTree
+14. destroy rbTree
+15. exit
+============================================================
+enter choice: redBlackTree created.
+
+================== shamrock run 2025 =====================
+ 1. create kidsRun
+ 2. create raceWalk
+ 3. create halfMarathon
+ 4. registerRace
+ 5. startRace
+ 6. stopRace
+ 7. test kidsRun unique method (snackBreak)
+ 8. test raceWalk unique methods (penalty + dq)
+ 9. test halfMarathon unique methods
+10. create redBlackTree
+11. insert new race into rbTree
+12. display rbTree
+13. remove all from rbTree
+14. destroy rbTree
+15. exit
+============================================================
+enter choice: enter race name for key: enter race date: race created: Fun Run on 2025-03-15
+kidsRun created with guardian GuardianX and minimum age 8
+inserted.
+
+================== shamrock run 2025 =====================
+ 1. create kidsRun
+ 2. create raceWalk
+ 3. create halfMarathon
+ 4. registerRace
+ 5. startRace
+ 6. stopRace
+ 7. test kidsRun unique method (snackBreak)
+ 8. test raceWalk unique methods (penalty + dq)
+ 9. test halfMarathon unique methods
+10. create redBlackTree
+11. insert new race into rbTree
+12. display rbTree
+13. remove all from rbTree
+14. destroy rbTree
+15. exit
+============================================================
+enter choice: enter race name for key: enter race date: race created: Alpha Walk on 2025-03-16
+kidsRun created with guardian GuardianX and minimum age 8
+inserted.
+
+================== shamrock run 2025 =====================
+ 1. create kidsRun
+ 2. create raceWalk
+ 3. create halfMarathon
+ 4. registerRace
+ 5. startRace
+ 6. stopRace
+ 7. test kidsRun unique method (snackBreak)
+ 8. test raceWalk unique methods (penalty + dq)
+ 9. test halfMarathon unique methods
+10. create redBlackTree
+11. insert new race into rbTree
+12. display rbTree
+13. remove all from rbTree
+14. destroy rbTree
+15. exit
+============================================================
+enter choice: enter race name for key: enter race date: race created: Beta Marathon on 2025-03-17
+kidsRun created with guardian GuardianX and minimum age 8
+inserted.
+
+================== shamrock run 2025 =====================
+ 1. create kidsRun
+ 2. create raceWalk
+ 3. create halfMarathon
+ 4. registerRace
+ 5. startRace
+ 6. stopRace
+ 7. test kidsRun unique method (snackBreak)
+ 8. test raceWalk unique methods (penalty + dq)
+ 9. test halfMarathon unique methods
+10. create redBlackTree
+11. insert new race into rbTree
+12. display rbTree
+13. remove all from rbTree
+14. destroy rbTree
+15. exit
+============================================================
+enter choice: enter race name for key: enter race date: race created: Gamma Run on 2025-03-18
+kidsRun created with guardian GuardianX and minimum age 8
+inserted.
+
+================== shamrock run 2025 =====================
+ 1. create kidsRun
+ 2. create raceWalk
+ 3. create halfMarathon
+ 4. registerRace
+ 5. startRace
+ 6. stopRace
+ 7. test kidsRun unique method (snackBreak)
+ 8. test raceWalk unique methods (penalty + dq)
+ 9. test halfMarathon unique methods
+10. create redBlackTree
+11. insert new race into rbTree
+12. display rbTree
+13. remove all from rbTree
+14. destroy rbTree
+15. exit
+============================================================
+enter choice: [BLACK] Alpha Walk: kidsRun "Alpha Walk" is starting!
+[BLACK] Beta Marathon: kidsRun "Beta Marathon" is starting!
+[BLACK] Fun Run: kidsRun "Fun Run" is starting!
+[RED] Gamma Run: kidsRun "Gamma Run" is starting!
+
+================== shamrock run 2025 =====================
+ 1. create kidsRun
+ 2. create raceWalk
+ 3. create halfMarathon
+ 4. registerRace
+ 5. startRace
+ 6. stopRace
+ 7. test kidsRun unique method (snackBreak)
+ 8. test raceWalk unique methods (penalty + dq)
+ 9. test halfMarathon unique methods
+10. create redBlackTree
+11. insert new race into rbTree
+12. display rbTree
+13. remove all from rbTree
+14. destroy rbTree
+15. exit
+============================================================
+enter choice: exiting shamrock run 2025 test menu.
+kidsRun destroyed: Alpha Walk
+race destroyed: Alpha Walk
+kidsRun destroyed: Gamma Run
+race destroyed: Gamma Run
+kidsRun destroyed: Fun Run
+race destroyed: Fun Run
+kidsRun destroyed: Beta Marathon
+race destroyed: Beta Marathon
